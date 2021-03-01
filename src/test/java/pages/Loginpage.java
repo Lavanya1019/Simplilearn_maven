@@ -28,6 +28,7 @@ public class Loginpage {
 	public Loginpage(WebDriver testdriver) 
 	{
 		this.driver=testdriver;
+		PageFactory.initElements(driver,this);
 	}
 	
 	public void Login(String UserName,String password) {
